@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon-site.ico" />
+    <link rel="stylesheet" href="../src/reset.css" />
+    <link rel="stylesheet" href="../src/base.css" />
+    <link rel="stylesheet" href="../src/form_v.css" />
+    <title>Projeto Social - Elo Solidário</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar--left">
+          <a href="../html/main.html">
+            <img src="../img/logo.png" alt="logo-site" class="logo" />
+          </a>
+        </div>
+
+        <div class="navbar--right">
+          <button class="nav-button" id="btn-contato">
+            <a href="./contato.html" class="nav--link">Contato</a>
+          </button>
+
+          <button class="nav-button" id="btn-servicos">
+            <a href="./servico.html" class="nav--link">Serviços</a>
+          </button>
+
+          <button class="nav-button" id="btn-cadastro">
+            <a href="./form.html" class="nav--link">Cadastro</a>
+          </button>
+
+          <button class="nav-button" id="btn-edit">
+            <a href="./edit.html" class="nav--link">Editar</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main--container">
+        <div class="form-vuneravel">
+          <form action="" method="post">
+            <h1>Preciso de Ajuda</h1>
+
+            <div class="input">
+              <label for="ONG">Nome Completo:</label>
+              <input type="text" name="NOME" id="NOME" required />
+            </div>
+
+            <div class="input">
+              <label for="DATA_DE_NASCIMENTO">Data de Nascimento</label>
+              <input
+                type="date"
+                name="DATA_DE_NASCIMENTO"
+                id="DATA_DE_NASCIMENTO"
+                required
+              />
+            </div>
+
+            <div class="input">
+              <label for="CPF">CPF:</label>
+              <input
+                type="text"
+                name="CPF"
+                id="CPF"
+                maxlength="14"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                required
+                title="Digite o CPF no formato 999.999.999-99"
+              />
+            </div>
+
+            <div class="input">
+              <label for="EMAIL">E-mail:</label>
+              <input type="email" name="EMAIL" id="EMAIL" required />
+            </div>
+
+            <div class="input">
+              <label for="TELEFONE">Telefone:</label>
+              <input type="tel" name="TELEFONE" id="TELEFONE" required />
+            </div>
+
+            <div class="input">
+              <label>Como podemos te ajudar?</label>
+
+              <div class="checkbox-group">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="VULNERABILIDADE[]"
+                    value="Alimento"
+                  />Alimento</label
+                >
+
+                <label
+                  ><input
+                    type="checkbox"
+                    name="VULNERABILIDADE[]"
+                    value="Vestimenta"
+                  />Vestimenta</label
+                >
+
+                <label
+                  ><input
+                    type="checkbox"
+                    name="VULNERABILIDADE[]"
+                    value="Moradia"
+                  />Moradia</label
+                >
+
+                <label
+                  ><input
+                    type="checkbox"
+                    name="VULNERABILIDADE[]"
+                    value="Saúde"
+                  />Saúde</label
+                >
+              </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div>
+      <button class="btn_voltar" id="btnvoltarphp">
+        voltar
+      </button>
+    </div>
+
+    <footer>
+      <a href="./">INFORMAÇÕES DE CONTATO</a>
+      <a href="./">SEJA ONG PARCEIRA</a>
+      <a href="./">AJUDA?</a>
+    </footer>
+
+    <script src="../script_php.js"></script>
+  </body>
+</html>

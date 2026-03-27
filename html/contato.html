@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon-site.ico"/>
+    <link rel="stylesheet" href="../src/reset.css"/>
+    <link rel="stylesheet" href="../src/base.css"/>
+    <link rel="stylesheet" href="../src/contato.css"/>
+    <title>Projeto Social - Elo Solidário</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar--left">
+          <a href="../html/main.html">
+            <img src="../img/logo.png" alt="logo-site" class="logo" />
+          </a>
+        </div>
+
+        <div class="navbar--right">
+          <button class="nav-button" id="btncontato">Contato</button>
+          <button class="nav-button" id="btnservicos">Serviços</button>
+          <button class="nav-button" id="btnformphp">Cadastro</button>
+          <button class="nav-button" id="btnedit">Editar</button>
+          <button class="nav-button" id="btnpessoa" hidden>Pessoa</button>
+          <button class="nav-button" id="btnong" hidden>Ong</button>
+          <button class="nav-button" id="btnvoltar" hidden>Voltar</button>
+          <button class="nav-button" id="btnlogin" hidden>Login</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- CARROSSEL -->
+      <input type="radio" id="radio-1" name="carousel" hidden />
+      <input type="radio" id="radio-2" name="carousel" hidden />
+      <input type="radio" id="radio-3" name="carousel" hidden />
+      <input type="radio" id="radio-4" name="carousel" hidden />
+
+      <div class="main--container">
+        <div class="contato--card">
+          <h3>Fale Conosco</h3>
+          <p>
+            Tem dúvidas, sugestões ou precisa de ajuda? Nossa equipe está pronta
+            para te ouvir!
+          </p>
+          <p class="main--text">
+            <span>Email:</span> contato@projetosocial.org
+          </p>
+          <p><span>Telefone:</span> (61) 1234-5678</p>
+          <p><span>Horário:</span> Seg a Sex, das 8h às 17h</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="./">INFORMAÇÕES DE CONTATO</a>
+      <a href="./">SEJA ONG PARCEIRA</a>
+      <a href="./">AJUDA?</a>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

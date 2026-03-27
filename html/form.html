@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon-site.ico" />
+    <link rel="stylesheet" href="../src/reset.css" />
+    <link rel="stylesheet" href="../src/base.css" />
+    <link rel="stylesheet" href="../src/form.css" />
+    <title>Projeto Social - Elo Solidário</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar--left">
+          <a href="../html/main.html">
+            <img src="../img/logo.png" alt="logo-site" class="logo" />
+          </a>
+        </div>
+
+        <div class="navbar--right">
+          <button class="nav-button" id="btncontato">Contato</button>
+          <button class="nav-button" id="btnservicos">Serviços</button>
+          <button class="nav-button" id="btnformphp">Cadastro</button>
+          <button class="nav-button" id="btnedit">Editar</button>
+          <button class="nav-button" id="btnvoltar" hidden>Voltar</button>
+          <button class="nav-button" id="btnlogin" hidden>Login</button>  
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+    <!-- CARROSSEL -->
+      <input type="radio" id="radio-1" name="carousel" hidden />
+      <input type="radio" id="radio-2" name="carousel" hidden />
+      <input type="radio" id="radio-3" name="carousel" hidden />
+      <input type="radio" id="radio-4" name="carousel" hidden />
+
+      <div class="main--container">
+        <div class="form_button">
+          <h2 class="form__title">Precisa de Ajuda ou quer ajudar?</h2>
+
+          <p class="form__desc">
+            Nosso Projeto Social conecta quem precisa com quem deseja
+            contribuir.
+          </p>
+          <p>Seja parte desta correte do bem!</p>
+
+          <div class="buttons">
+            <button class="button_form" id="btnpessoa">Preciso de Ajuda</button>
+
+            <button class="button_form" id="btnong">Quero ajudar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="./">INFORMAÇÕES DE CONTATO</a>
+      <a href="./">SEJA ONG PARCEIRA</a>
+      <a href="./">AJUDA?</a>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

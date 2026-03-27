@@ -1,0 +1,91 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    margin-bottom: 0;
+}
+
+.main--container {
+    background-color: cadetblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main__desc {
+    margin: 0.8rem 5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  margin: 40px auto 0;
+}
+
+.carrosel-conteudo {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.slide {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-tamanho {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.manual {
+  margin: 0.2rem 0 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bolinha {
+  background-color: transparent;
+  border: 2px solid rgb(34, 102, 139);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.bolinha:not(:last-child) {
+  margin-right: 10px;
+}
+
+.bolinha:hover {
+  background-color: rgb(34, 102, 139);
+}
+
+/* Movendo o container */
+#radio-1:checked ~ .slider .carrosel-conteudo {
+  margin-left: 0%;
+}
+#radio-2:checked ~ .slider .carrosel-conteudo {
+  margin-left: -100%;
+}
+#radio-3:checked ~ .slider .carrosel-conteudo {
+  margin-left: -200%;
+}
+#radio-4:checked ~ .slider .carrosel-conteudo {
+  margin-left: -300%;
+}
